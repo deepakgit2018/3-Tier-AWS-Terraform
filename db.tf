@@ -1,4 +1,3 @@
-/*
 # Create 3 subnets in db layer across each AZ
 
 # Subnets for DB layer
@@ -70,4 +69,3 @@ resource "aws_db_instance" "rds_mysql_instances" {
   vpc_security_group_ids = aws_security_group.db-sg.*.id
   db_subnet_group_name = aws_db_subnet_group.db_subnet_group.name
   }
-  */
